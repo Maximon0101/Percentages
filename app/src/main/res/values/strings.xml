@@ -13,4 +13,5 @@
     <string name="deposit_unit">₽</string>
     <string name="percentage_hint">percentage</string>
     <string name="percentage_unit">%</string>
+    <string name="input_error">Please, enter decimal number</string>
 </resources>
