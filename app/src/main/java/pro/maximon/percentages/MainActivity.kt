@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
                 builder.setMessage(getString(R.string.validation_error_message));
                 builder.setNeutralButton("Ok") {dialogInterface, i ->};
                 builder.show();
+                return@setOnClickListener
             }
 
             val deposit_1 : Double = bankCard_1.getDeposit();
