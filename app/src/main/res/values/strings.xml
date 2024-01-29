@@ -14,4 +14,6 @@
     <string name="percentage_hint">percentage</string>
     <string name="percentage_unit">%</string>
     <string name="input_error">Please, enter decimal number</string>
+    <string name="error">Error</string>
+    <string name="validation_error_message">Please fill in the appropriate fields with decimal numbers</string>
 </resources>

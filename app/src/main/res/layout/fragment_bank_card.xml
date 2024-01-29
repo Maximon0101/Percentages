@@ -29,7 +29,8 @@
                     android:id="@+id/bank_card_deposit_text"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="@string/deposit_hint" />
+                    android:hint="@string/deposit_hint"
+                    android:inputType="numberDecimal" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -63,7 +64,8 @@
                     android:id="@+id/bank_card_percentage_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/percentage_hint" />
+                    android:hint="@string/percentage_hint"
+                    android:inputType="numberDecimal" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView

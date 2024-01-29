@@ -2,28 +2,19 @@ package pro.maximon.percentages
 
 import android.content.Context
 import android.view.View
-import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 
-class BankCard {
-    private val view : View;
-    private val deposit_text_input : TextInputEditText;
-    private val percentage_text_input : TextInputEditText;
-    private val deposit_layout : TextInputLayout;
-    private val percetage_layout : TextInputLayout;
-    private val context : Context;
+class BankCard(_view: View, _context: Context) {
+    private val view : View = _view;
+    private val context : Context = _context;
+    private val deposit_text_input : TextInputEditText = view.findViewById(R.id.bank_card_deposit_text);
+    private val percentage_text_input : TextInputEditText = view.findViewById(R.id.bank_card_percentage_text);
+    private val deposit_layout : TextInputLayout = view.findViewById(R.id.bank_card_deposit);
+    private val percetage_layout : TextInputLayout = view.findViewById(R.id.bank_card_percentage);
 
-    constructor(_view : View, _context : Context) {
-        view = _view;
-        deposit_text_input = view.findViewById(R.id.bank_card_deposit_text);
-        percentage_text_input = view.findViewById(R.id.bank_card_percentage_text);
-        deposit_layout = view.findViewById(R.id.bank_card_deposit);
-        percetage_layout = view.findViewById(R.id.bank_card_percentage);
-        context = _context;
-
-
+    init {
         deposit_text_input.addTextChangedListener {
             val str : String = deposit_text_input.text.toString();
             if (!isNumber(str)) {
@@ -32,7 +23,6 @@ class BankCard {
                 deposit_layout.error = null;
             }
         }
-
         percentage_text_input.addTextChangedListener {
             val str : String = percentage_text_input.text.toString();
             if (!isNumber(str)) {
@@ -55,10 +45,16 @@ class BankCard {
     }
 
     public  fun getDeposit() : Double {
-        return deposit_text_input.text.toString().toDouble();
+        return deposit_text_input.text
+            .toString()
+            .replace(',', '.')
+            .toDouble();
     }
 
     public fun getPercentage() : Double {
-        return percentage_text_input.text.toString().toDouble();
+        return percentage_text_input.text
+            .toString()
+            .replace(',', '.')
+            .toDouble() / 100;
     }
 }
