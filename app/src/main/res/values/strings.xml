@@ -7,4 +7,6 @@
     <string name="profit">Profit</string>
     <string name="percentage">Percentage</string>
     <string name="calculate">Calculate</string>
+    <string name="profit_defauld_value"></string>
+    <string name="percentage_default_value"></string>
 </resources>

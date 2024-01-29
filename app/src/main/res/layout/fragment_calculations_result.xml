@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -30,6 +31,17 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
+            android:id="@+id/profit_value_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="@string/profit_defauld_value"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/profit_lable_text"
+            app:layout_constraintEnd_toStartOf="@+id/calculate_button"
+            app:layout_constraintTop_toTopOf="@+id/profit_lable_text" />
+
+        <TextView
             android:id="@+id/percentage_lable_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -38,9 +50,20 @@
             android:layout_marginBottom="8dp"
             android:text="@string/percentage"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/profit_lable_text"
+            app:layout_constraintBottom_toTopOf="@+id/profit_value_text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/percentage_value_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="@string/percentage_default_value"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/percentage_lable_text"
+            app:layout_constraintEnd_toStartOf="@+id/calculate_button"
+            app:layout_constraintTop_toTopOf="@+id/percentage_lable_text" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
