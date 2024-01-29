@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Percentages</string>
+    <string name="action_settings">Настройки</string>
+    <string name="next">Дaльше</string>
+    <string name="previous">Назад</string>
+    <string name="profit">Прибыль</string>
+    <string name="percentage">Процент</string>
+    <string name="calculate">Рассчитать</string>
+</resources>
