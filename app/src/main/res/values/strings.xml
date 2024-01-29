@@ -11,4 +11,6 @@
     <string name="percentage_default_value"></string>
     <string name="deposit_hint">deposit</string>
     <string name="deposit_unit">₽</string>
+    <string name="percentage_hint">percentage</string>
+    <string name="percentage_unit">%</string>
 </resources>
