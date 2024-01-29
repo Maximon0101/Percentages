@@ -4,9 +4,11 @@
     <string name="action_settings">Настройки</string>
     <string name="next">Дaльше</string>
     <string name="previous">Назад</string>
-    <string name="profit">Прибыль</string>
-    <string name="percentage">Процент</string>
+    <string name="profit">Прибыль:</string>
+    <string name="percentage">Процент:</string>
     <string name="calculate">Рассчитать</string>
     <string name="profit_defauld_value">"   "</string>
     <string name="percentage_default_value">"   "</string>
+    <string name="deposit_hint">депозит</string>
+    <string name="deposit_unit">₽</string>
 </resources>

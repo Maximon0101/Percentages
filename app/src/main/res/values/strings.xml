@@ -4,9 +4,11 @@
     <!-- Strings used for fragments for navigation -->
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-    <string name="profit">Profit</string>
-    <string name="percentage">Percentage</string>
+    <string name="profit">Profit:</string>
+    <string name="percentage">Percentage:</string>
     <string name="calculate">Calculate</string>
     <string name="profit_defauld_value"></string>
     <string name="percentage_default_value"></string>
+    <string name="deposit_hint">deposit</string>
+    <string name="deposit_unit">₽</string>
 </resources>
