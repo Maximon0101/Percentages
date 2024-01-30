@@ -16,5 +16,8 @@
     <string name="input_error">Пожалуйста, введите десятичное число</string>
     <string name="error">Ошибка</string>
     <string name="validation_error_message">Пожалуйста, заполните десятичными числами соответствующие поля</string>
-    <string name="kilos">тыс.</string>
+    <string name="kilo">тыс.</string>
+    <string name="million">млн.</string>
+    <string name="billion">млрд.</string>
+    <string name="tomuch">Слишком много</string>
 </resources>

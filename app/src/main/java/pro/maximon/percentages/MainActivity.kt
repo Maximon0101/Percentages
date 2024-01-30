@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
             val profit = profit_1 + profit_2;
             val percentage = (profit / (deposit_1 + deposit_2)) - 1;
 
-            val profit_out_text = DecimalFormat("#.##").format(profit / 1000) + kilos(this) +  " ₽";
+            val profit_out_text = SI(profit, this) +" ₽";
             val percentage_out_text = DecimalFormat("#.##").format(percentage * 100) + "%";
 
             findViewById<TextView>(R.id.profit_value_text).text = profit_out_text;

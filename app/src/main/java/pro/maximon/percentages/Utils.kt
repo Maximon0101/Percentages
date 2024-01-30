@@ -1,6 +1,7 @@
 package pro.maximon.percentages
 
 import android.content.Context
+import java.text.DecimalFormat
 
 fun isNumber(string: String) : Boolean {
     var count : Int = 0;
@@ -15,6 +16,10 @@ fun isNumber(string: String) : Boolean {
     return true;
 }
 
-fun kilos(_context : Context) : String {
-    return _context.getString(R.string.kilos);
+fun SI(profit : Double, context: Context) : String {
+    if (profit / 1000 < 1) { return DecimalFormat("#.##").format(profit) };
+    if (profit / 1000000 < 1) { return DecimalFormat("#.##").format(profit / 1000) + context.getString(R.string.kilo) };
+    if (profit / 1000000000 < 1) { return DecimalFormat("#.##").format(profit / 1000000) + context.getString(R.string.million) };
+    if (profit / 1000000000000 < 1) { return DecimalFormat("#.##").format(profit / 1000000000) + context.getString(R.string.billion) };
+    return context.getString(R.string.tomuch);
 }
