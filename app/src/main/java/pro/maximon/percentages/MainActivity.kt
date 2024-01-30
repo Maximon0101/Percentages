@@ -1,7 +1,5 @@
 package pro.maximon.percentages
 
-import android.content.Context
-import android.graphics.drawable.Icon
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -9,8 +7,6 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Close
 import androidx.core.view.children
 import java.text.DecimalFormat
 
@@ -52,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             val profit = profit_1 + profit_2;
             val percentage = (profit / (deposit_1 + deposit_2)) - 1;
 
-            val profit_out_text = SI(profit, this) +" ₽";
+            val profit_out_text = profit.formatTOSiString(this) +" ₽";
             val percentage_out_text = DecimalFormat("#.##").format(percentage * 100) + "%";
 
             findViewById<TextView>(R.id.profit_value_text).text = profit_out_text;

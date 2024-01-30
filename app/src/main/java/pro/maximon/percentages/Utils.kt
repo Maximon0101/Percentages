@@ -16,10 +16,10 @@ fun isNumber(string: String) : Boolean {
     return true;
 }
 
-fun SI(number : Double, context: Context) : String {
-    if (number / 1000 < 1) { return DecimalFormat("#.##").format(number) };
-    if (number / 1000000 < 1) { return DecimalFormat("#.##").format(number / 1000) + context.getString(R.string.kilo) };
-    if (number / 1000000000 < 1) { return DecimalFormat("#.##").format(number / 1000000) + context.getString(R.string.million) };
-    if (number / 1000000000000 < 1) { return DecimalFormat("#.##").format(number / 1000000000) + context.getString(R.string.billion) };
+fun Double.formatTOSiString(context: Context) : String {
+    if (this / 1E3 < 1) { return DecimalFormat("#.##").format(this) };
+    if (this / 1E6 < 1) { return DecimalFormat("#.##").format(this / 1E3) + context.getString(R.string.kilo) };
+    if (this / 1E9 < 1) { return DecimalFormat("#.##").format(this / 1E6) + context.getString(R.string.million) };
+    if (this / 1E12 < 1) { return DecimalFormat("#.##").format(this / 1E9) + context.getString(R.string.billion) };
     return context.getString(R.string.tomuch);
 }
