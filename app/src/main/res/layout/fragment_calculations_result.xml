@@ -26,7 +26,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginBottom="16dp"
             android:text="@string/profit"
-            android:textSize="20sp"
+            android:textSize="18dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -34,9 +34,9 @@
             android:id="@+id/profit_value_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="24dp"
+            android:layout_marginEnd="8dp"
             android:text="@string/profit_defauld_value"
-            android:textSize="20sp"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@+id/profit_lable_text"
             app:layout_constraintEnd_toStartOf="@+id/calculate_button"
             app:layout_constraintTop_toTopOf="@+id/profit_lable_text" />
@@ -49,7 +49,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:text="@string/percentage"
-            android:textSize="20sp"
+            android:textSize="18dp"
             app:layout_constraintBottom_toTopOf="@+id/profit_value_text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -58,9 +58,9 @@
             android:id="@+id/percentage_value_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="24dp"
+            android:layout_marginEnd="8dp"
             android:text="@string/percentage_default_value"
-            android:textSize="20sp"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/percentage_lable_text"
             app:layout_constraintEnd_toStartOf="@+id/calculate_button"
             app:layout_constraintTop_toTopOf="@+id/percentage_lable_text" />
