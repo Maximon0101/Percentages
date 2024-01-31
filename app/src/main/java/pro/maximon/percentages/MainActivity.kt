@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
             val profit_1 : Double = BankCalculator(deposit_1, percentage_1).calculateAnnualProfit();
             val profit_2 : Double = BankCalculator(deposit_2, percentage_2).calculateAnnualProfit();
             val profit = profit_1 + profit_2;
-            val percentage = (profit / (deposit_1 + deposit_2)) - 1;
+            val percentage = (profit / (deposit_1 + deposit_2));
 
             val profit_out_text = profit.formatTOSiString(this) +" ₽";
             val percentage_out_text = DecimalFormat("#.##").format(percentage * 100) + "%";
