@@ -12,13 +12,8 @@ public class BankCalculator {
     }
 
     public double calculateAnnualProfit() {
-        double current_deposit = deposit;
-        double monthly_percentage = percentage / 12;
-
-        for (int i = 1; i < 13; i++) {
-            current_deposit *= monthly_percentage + 1;
-        }
-        return current_deposit;
+        deposit *= percentage;
+        return deposit;
     }
 
 }
